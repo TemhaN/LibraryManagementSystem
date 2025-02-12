@@ -5,10 +5,10 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:LibraryManagementSystem"
              mc:Ignorable="d" 
-              d:DesignHeight="362" d:DesignWidth="655">
+             d:DesignHeight="362" d:DesignWidth="655">
     <Grid>
-        <StackPanel HorizontalAlignment="Left" Height="332" VerticalAlignment="Top" Width="800" Margin="10,30,-10,0">
-            <DataGrid Height="333" Background="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}" Margin="0,0,34,0" x:Name="dgBorrow" IsReadOnly="True" AutoGenerateColumns="False">
+        <StackPanel HorizontalAlignment="Left" Height="320" VerticalAlignment="Top" Width="840" Margin="10,20,-10,0">
+            <DataGrid Height="313" Background="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}" Margin="0,0,34,0" x:Name="dgBorrow" IsReadOnly="True" AutoGenerateColumns="False">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Book Id" Binding="{Binding BookId}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Book Name" Binding="{Binding BookName}"></DataGridTextColumn>

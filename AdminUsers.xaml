@@ -75,7 +75,7 @@
         </Grid>
 
         <!-- Таблица пользователей -->
-        <DataGrid Grid.Row="1" IsReadOnly="True" Height="300" Width="820" Margin="10,15,10,10"
+        <DataGrid Grid.Row="1" IsReadOnly="True" Height="300" Width="800" Margin="10,15,10,10"
                   x:Name="dgUsers" AutoGenerateColumns="False"
                   Background="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}">
 

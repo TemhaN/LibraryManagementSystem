@@ -7,17 +7,22 @@
              mc:Ignorable="d" 
              d:DesignHeight="362" d:DesignWidth="655">
     <Grid>
-        <StackPanel HorizontalAlignment="Left" Height="332" Margin="10,30,0,0" VerticalAlignment="Top" Width="320" Name="requestStackPanel">
-            <DataGrid IsReadOnly="True" Height="332" Name="dgRequest" AutoGenerateColumns="False" Background="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}">
+        <StackPanel HorizontalAlignment="Left" Height="332" Margin="10,5,0,0" VerticalAlignment="Top" Width="350" Name="requestStackPanel">
+            <Label Content="Запрошенные книги" HorizontalAlignment="Center" VerticalAlignment="Top" Background="{x:Null}" Foreground="Black" FontFamily="NORTHEN" FontSize="20" FontWeight="Bold" Width="221"/>
+
+            <DataGrid IsReadOnly="True" Height="300" Name="dgRequest" AutoGenerateColumns="False" 
+              Background="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Book Id" Binding="{Binding BookId}"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Book Name" Binding="{Binding BookName}"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Requested Date" Binding="{Binding DateRequested}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Book Id" Binding="{Binding BookId}"/>
+                    <DataGridTextColumn Header="Book Name" Binding="{Binding BookName}"/>
+                    <DataGridTextColumn Header="Requested Date" Binding="{Binding DateRequested}"/>
                 </DataGrid.Columns>
             </DataGrid>
         </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="332" Margin="350,30,0,0" VerticalAlignment="Top" Width="425" Name="returnStackPanel">
-            <DataGrid IsReadOnly="True" Height="332" Name="dgReturn" AutoGenerateColumns="False" Background="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}">
+
+        <StackPanel HorizontalAlignment="Left" Height="332" Margin="370,5,0,0" VerticalAlignment="Top" Width="445" Name="returnStackPanel">
+            <Label Content="Полученные книги" HorizontalAlignment="Center" VerticalAlignment="Top" Background="{x:Null}" Foreground="Black" FontFamily="NORTHEN" FontSize="20" FontWeight="Bold" Width="221"/>
+            <DataGrid IsReadOnly="True" Height="300" Name="dgReturn" AutoGenerateColumns="False" Background="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Book Id" Binding="{Binding BookId}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Book Name" Binding="{Binding BookName}"></DataGridTextColumn>
@@ -32,8 +37,6 @@
                 </DataGrid.Columns>
             </DataGrid>
         </StackPanel>
-        <Label Content="Recieved Books" HorizontalAlignment="Left" Margin="512,-6,-78,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontFamily="NORTHEN" FontSize="20" Width="221"/>
-        <Label Content="Requested Books" HorizontalAlignment="Left" Margin="137,-6,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontFamily="NORTHEN" FontSize="20" Width="221"/>
 
     </Grid>
 </UserControl>

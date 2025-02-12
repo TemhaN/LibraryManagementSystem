@@ -30,7 +30,7 @@
                Margin="0,15,0,0"/>
 
         <!-- Карточка с контентом -->
-        <materialDesign:Card Width="825" Height="350" Padding="20" Margin="150,50,0,0" HorizontalAlignment="Left">
+        <materialDesign:Card Width="825" Height="350" Margin="150,50,0,0" HorizontalAlignment="Left">
             <StackPanel Name="userStackPanel">
                 <!-- Сюда можно добавить элементы с данными пользователя -->
             </StackPanel>
